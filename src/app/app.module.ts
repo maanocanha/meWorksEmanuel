@@ -11,17 +11,23 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatCheckboxModule } from '@angular/material/checkbox'; 
 import { MatButtonModule } from '@angular/material/button'; 
 import { MatRadioModule } from '@angular/material/radio'; 
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';  
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
+import { CabecalhoComponent } from './cabecalho/cabecalho.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    CadastroComponent
+    CadastroComponent,
+    CabecalhoComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserAnimationsModule,
@@ -35,6 +41,8 @@ import { CadastroComponent } from './cadastro/cadastro.component';
     AppRoutingModule,
     MatButtonModule,
     MatRadioModule,
+    MatSidenavModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

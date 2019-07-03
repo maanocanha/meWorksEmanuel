@@ -1,0 +1,12 @@
+.titulo_centralizado {
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px #3F51B5 solid;
+}
+
+.titulo_meworks {
+    color: #3F51B5;
+    font-size: 35px;
+    text-decoration: none;
+}
