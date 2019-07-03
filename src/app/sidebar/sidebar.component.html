@@ -1,12 +1,20 @@
-<mat-sidenav-container class="example-container">
-    <mat-sidenav #sidenav mode="side" [(opened)]="opened">
-        Conteudo aqui
-    </mat-sidenav>
-
-    <mat-sidenav-content>
-        <button mat-button (click)="sidenav.toggle()">
-            <mat-icon aria-hidden="false" aria-label="Example home icon">menu</mat-icon>    
-        </button>  
-    </mat-sidenav-content>
-</mat-sidenav-container>
-      
+<div class="servicos_sidebar">
+    <div class="titulo_servicos">
+        <p>Serviços</p>
+    </div>
+    <a routerLink="/Encanadores"><mat-card>Encanadores</mat-card></a>
+    <a routerLink="/Eletricistas"><mat-card>Eletricistas</mat-card></a>
+    <a routerLink="/Jardineiros"><mat-card>Jardineiros</mat-card></a>
+    <a routerLink="/Pintores"><mat-card>Pintores</mat-card></a>
+    <a routerLink="/Faxineiros"><mat-card>Faxineiros</mat-card></a>
+    <a routerLink="/Montagem"><mat-card>Montagem de móveis</mat-card></a>
+    <a routerLink="/Pedreiros"><mat-card>Pedreiros</mat-card></a>
+    <a routerLink="/Reforma"><mat-card>Reforma e reparos</mat-card></a>
+    <div class="divisor_opcoes"></div>
+    <div class="titulo_servicos">
+        <p>Opções</p>
+    </div>
+    <a routerLink="/Perfil"><mat-card>Meu perfil</mat-card></a>
+    <a routerLink="/Configuracoes"><mat-card>Configurações</mat-card></a>
+    <a routerLink="/Sair"><mat-card>Sair</mat-card></a>
+</div>

@@ -1,18 +1,15 @@
-.example-container {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+.servicos_sidebar {
+    margin: 0 0 50px 0;
 }
 
-.mat-drawer {
-    width: 300px;
+.titulo_servicos{
+    text-align: center;
 }
-  
-.example-events {
-width: 300px;
-height: 200px;
-overflow: auto;
-border: 1px solid #555;
+
+a {
+    text-decoration: none;
+}
+
+.divisor_opcoes{
+    padding: 50px 0;
 }
