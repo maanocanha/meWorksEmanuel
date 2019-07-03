@@ -21,6 +21,7 @@ import { CadastroComponent } from './cadastro/cadastro.component';
 import { CabecalhoComponent } from './cabecalho/cabecalho.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { PrestadorComponent } from './prestador/prestador.component';
+import { PerfilComponent } from './perfil/perfil.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { PrestadorComponent } from './prestador/prestador.component';
     CadastroComponent,
     CabecalhoComponent,
     SidebarComponent,
-    PrestadorComponent
+    PrestadorComponent,
+    PerfilComponent
   ],
   imports: [
     BrowserAnimationsModule,
