@@ -16,3 +16,21 @@ height: 200px;
 overflow: auto;
 border: 1px solid #555;
 }
+
+.trabalhadores{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.example-card {
+    display: inline-block;
+    margin: 20px 10px;
+    max-width: 400px;
+    text-align: left;
+}
+  
+.example-header-image {
+background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+background-size: cover;
+}
