@@ -1,7 +1,12 @@
 <mat-card>
     <mat-card-header>
-        <mat-card-title>Perfil do prestador</mat-card-title>
+        <mat-card-title>Perfil</mat-card-title>
     </mat-card-header>
+
+    <img mat-card-image src="https://i.imgflip.com/2i8ld7.jpg" alt="Foto do usuário">
+
+    <input class="ng-hide" id="input-file-id" multiple type="file" />
+    <label for="input-file-id" class="md-button md-raised md-primary">Selecione uma imagem...</label>
 
     <form class="example-form">
         <mat-form-field class="example-full-width">
@@ -11,5 +16,13 @@
         <mat-form-field class="example-full-width">
             <textarea matInput placeholder="Descrição"></textarea>
         </mat-form-field>
+
+        <mat-grid-list cols="1" rowHeight="11:1">
+            <mat-grid-tile></mat-grid-tile>
+            <mat-grid-tile>
+                <button routerLink="/perfil" class="botao" mat-button>Salvar alterações</button>
+            </mat-grid-tile>
+            <mat-grid-tile></mat-grid-tile>
+        </mat-grid-list>
     </form>
 </mat-card>
