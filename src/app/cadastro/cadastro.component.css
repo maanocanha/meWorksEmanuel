@@ -1,7 +1,7 @@
 mat-card {
     display: block;
     margin: 150px auto;
-    max-width: 800px;
+    max-width: 600px;
     padding: 30px;
 }
 
@@ -19,4 +19,40 @@ mat-card {
 .mat-radio-button ~ .mat-radio-button {
     margin-left: 16px;
 }
+
+
+.example-radio-group {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+}
+  
+.example-radio-button {
+    margin: 5px;
+}
+
+.grid_simples {
+    width: auto;
+    margin: 150px auto;
+}
+
+.bloco > mat-form-field {
+    width: 290px;
+}
+
+.bloco {
+    display: inline-block;
+    width: 50%;
+}
+
+.bloco:nth-child(2) {
+    text-align: right;
+}
+
+.botao {
+    color: #000;
+    background-color: #FF3F81;
+}
+
+  
   

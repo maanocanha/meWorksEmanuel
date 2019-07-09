@@ -1,27 +1,105 @@
 <mat-card>
-    <mat-card-title>Cadastro</mat-card-title>
+    <mat-card-title>Dados pessoais</mat-card-title>
     <div class="container">
-        <mat-radio-group aria-label="Selecione uma opção">
-            <mat-radio-button value="1">Serei um cliente</mat-radio-button>
-            <mat-radio-button value="2">Quero prestar serviços</mat-radio-button>
+        <mat-radio-group ngModel="escolha" aria-label="Selecione uma opção">
+            <mat-radio-button value="aa">Serei um cliente</mat-radio-button>
+            <mat-radio-button value="bb">Quero prestar serviços</mat-radio-button>
         </mat-radio-group>
 
-        <div class="epaco_cadastro">
+        {{escolha}}
+
+        <div class="container">
             <mat-form-field>
-                <input matInput placeholder="Razão social">
+                <input matInput placeholder="Nome">
             </mat-form-field>
             <mat-form-field>
-                <input matInput placeholder="CNPJ">
+                <input matInput placeholder="Sobrenome">
             </mat-form-field>
-            <mat-grid-list cols="3" rowHeight="6:1">
-                <mat-grid-tile>
-                    <mat-checkbox>Não possuo CNPJ</mat-checkbox>
-                </mat-grid-tile>
-                <mat-grid-tile></mat-grid-tile>
-                <mat-grid-tile>
-                    <input matInput placeholder="Contato">
-                </mat-grid-tile>
-            </mat-grid-list>
-        </div>          
+            <div class="grid_semples">
+                <div class="bloco">
+                    <mat-form-field>
+                        <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker></mat-datepicker>
+                    </mat-form-field>
+                </div>
+                <div class="bloco">
+                    <mat-form-field>
+                        <mat-label>Sexo</mat-label>
+                        <mat-select [(value)]="selecionado">
+                            <mat-option>Não informar</mat-option>
+                            <mat-option value="Masculino">Masculino</mat-option>
+                            <mat-option value="Feminino">Feminino</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+            </div>
+        </div>         
+    </div>
+    <mat-card-title>Endereço</mat-card-title>
+    <div class="container">
+        <div class="grid_semples">
+            <div class="bloco">
+                <mat-form-field>
+                    <input matInput placeholder="CEP">
+                </mat-form-field>
+            </div>
+            <div class="bloco">
+                <mat-form-field>
+                    <input matInput placeholder="Cidade">
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="grid_semples">
+            <div class="bloco">
+                <mat-form-field>
+                    <input matInput placeholder="Estado">
+                </mat-form-field>
+            </div>
+            <div class="bloco">
+                <mat-form-field>
+                    <input matInput placeholder="Bairro">
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="grid_semples">
+            <div class="bloco">
+                <mat-form-field>
+                    <input matInput placeholder="Rua">
+                </mat-form-field>
+            </div>
+            <div class="bloco">
+                <mat-form-field>
+                    <input matInput placeholder="Numero">
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="grid_semples">
+            <div class="bloco">
+                <mat-form-field>
+                    <input matInput placeholder="Numero">
+                </mat-form-field>
+            </div>
+        </div>
+    </div>
+    <mat-card-title>Conta</mat-card-title>
+    <div class="container">
+        <mat-form-field>
+            <input matInput placeholder="E-mail">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Senha">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Confirmar senha">
+        </mat-form-field>
+        <div class="grid_semples">
+            <div class="bloco">
+                <button routerLink="/" mat-button>Cancelar</button>
+            </div>
+            <div class="bloco">
+                <button routerLink="/" class="botao" mat-button>Salvar</button>
+            </div>
+        </div>
     </div>
 </mat-card>      

@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CadastroComponent implements OnInit {
 
+  escolha: string;
   constructor() { }
 
   ngOnInit() {

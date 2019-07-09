@@ -10,9 +10,13 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select'; 
 import { MatCheckboxModule } from '@angular/material/checkbox'; 
 import { MatButtonModule } from '@angular/material/button'; 
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
 import { MatRadioModule } from '@angular/material/radio'; 
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
+
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -46,6 +50,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
     MatCheckboxModule,
     AppRoutingModule,
     MatButtonModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
     MatRadioModule,
     MatSidenavModule,
     MatIconModule
