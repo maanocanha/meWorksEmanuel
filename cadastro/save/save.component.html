@@ -1,0 +1,39 @@
+<mat-card>
+    <mat-card-header>        
+        <mat-card-title>CADASTRO DE PESSOAS</mat-card-title>        
+    </mat-card-header>
+    <form>
+      <mat-form-field class="example-full-width">
+        <textarea matInput name="first_name" [(ngModel)]="pessoas.nome" placeholder="First Name"></textarea>
+      </mat-form-field>
+    
+      <mat-form-field class="example-full-width">
+        <textarea matInput name="last_name" [(ngModel)]="pessoas.sobrenome" placeholder="Last Name"></textarea>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <textarea matInput name="last_name" [(ngModel)]="pessoas.RG" placeholder="Last Name"></textarea>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <textarea matInput name="last_name" [(ngModel)]="pessoas.email" placeholder="Last Name"></textarea>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <textarea matInput name="last_name" [(ngModel)]="pessoas.cep" placeholder="Last Name"></textarea>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <textarea matInput name="last_name" [(ngModel)]="pessoas.senha" placeholder="Last Name"></textarea>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <textarea matInput name="last_name" [(ngModel)]="pessoas.contato" placeholder="Last Name"></textarea>
+      </mat-form-field>
+          
+        <div class="actions">
+            <button (click)="submit()" mat-raised-button color="primary">Salvar</button>     
+            <button (click)="back()" mat-raised-button>Voltar</button>         
+        </div>
+      </form>
+    </mat-card>

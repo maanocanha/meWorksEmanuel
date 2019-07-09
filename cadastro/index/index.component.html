@@ -1,0 +1,27 @@
+<mat-card>
+    <mat-card-title>Cadastro</mat-card-title>
+    <div class="container">
+        <mat-radio-group aria-label="Selecione uma opção">
+            <mat-radio-button value="1">Serei um cliente</mat-radio-button>
+            <mat-radio-button value="2">Quero prestar serviços</mat-radio-button>
+        </mat-radio-group>
+
+        <div class="epaco_cadastro">
+            <mat-form-field>
+                <input matInput placeholder="Razão social">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="CNPJ">
+            </mat-form-field>
+            <mat-grid-list cols="3" rowHeight="6:1">
+                <mat-grid-tile>
+                    <mat-checkbox>Não possuo CNPJ</mat-checkbox>
+                </mat-grid-tile>
+                <mat-grid-tile></mat-grid-tile>
+                <mat-grid-tile>
+                    <input matInput placeholder="Contato">
+                </mat-grid-tile>
+            </mat-grid-list>
+        </div>          
+    </div>
+</mat-card>      
