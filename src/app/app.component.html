@@ -1,13 +1,25 @@
-<!--<app-login></app-login>-->
-<!--<app-perfil></app-perfil>-->
-<!--<app-prestador></app-prestador>-->
-<!--<app-cadastro></app-cadastro>-->
-<a routerLink="/login">Login</a>
-<br>
-<a routerLink="/perfil">Perfil</a>
-<br>
-<a routerLink="/cadastro">Cadastro</a>
-<br>
-<a routerLink="/prestador">Prestador</a>
+<mat-sidenav-container class="example-container">
+    <mat-sidenav #sidenav mode="side" [(opened)]="opened">
+            <app-sidebar></app-sidebar>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <button mat-button (click)="sidenav.toggle()">
+            <mat-icon aria-hidden="false" aria-label="Example home icon">menu</mat-icon>    
+        </button>  
+        <app-cabecalho></app-cabecalho>
+        <div class="conteudo">
+            <!--<app-login></app-login>-->
+            <a routerLink="/login">Login</a>
+            <br>
+            <a routerLink="/perfil">Perfil</a>
+            <br>
+            <a routerLink="/cadastro">Cadastro</a>
+            <br>
+            <a routerLink="/prestador">Prestador</a>
+        </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
 
 <router-outlet></router-outlet>

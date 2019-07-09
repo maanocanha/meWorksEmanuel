@@ -1,5 +1,6 @@
 .titulo_centralizado {
-    display: block;
+    display: inline-block;
+    width: calc(100% - 64px);
     text-align: center;
     padding: 20px 0;
     border-bottom: 1px #3F51B5 solid;
