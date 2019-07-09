@@ -22,6 +22,7 @@ import { CabecalhoComponent } from './cabecalho/cabecalho.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { PrestadorComponent } from './prestador/prestador.component';
 import { PerfilComponent } from './perfil/perfil.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { PerfilComponent } from './perfil/perfil.component';
     CabecalhoComponent,
     SidebarComponent,
     PrestadorComponent,
-    PerfilComponent
+    PerfilComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserAnimationsModule,
